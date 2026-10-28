@@ -32,12 +32,12 @@ async function getTodos() {
     const todosData = await getData();
 
     if (!todosData) {
-        todosSection.textContent = "Unable to load todos. Please try again.";
+        todoSection.textContent = "Unable to load todos. Please try again.";
         return;
     }
 
     if (todosData.length === 0) {
-        todosSection.textContent = "No todos found.";
+        todoSection.textContent = "No todos found.";
         return;
     }
 

@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    color: #26324b;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #5145cd;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+#todo-list li {
+    background: #f8f9ff;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-left: 4px solid #5145cd;
+    border-radius: 8px;
+    line-height: 1.5;
+    transition: transform 0.2s, background 0.2s;
+}
+
+#todo-list li:hover {
+    background: #eceaff;
+    transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+}
